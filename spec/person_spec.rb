@@ -45,13 +45,13 @@ RSpec.describe "Person" do
           people.each { |person| expect(person.happiness).to eq(8)}
         end
 
-        it "a person instance can change his/her happiness index" do
-          people.each do |person|
-            original_happiness = person.happiness
-            person.happiness += 1
-            expect(person.happiness).to eq(original_happiness + 1)
-          end
-        end
+        # it "a person instance can change his/her happiness index" do
+        #   people.each do |person|
+        #     original_happiness = person.happiness
+        #     person.happiness += 1
+        #     expect(person.happiness).to eq(original_happiness + 1)
+        #   end
+        # end
 
         it "a person's happiness doesn't exceed 10" do
           people.each do |person|
